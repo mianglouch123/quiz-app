@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.main-screen-auth {
+@apply h-screen w-[100vw] bg-[radial-gradient(circle_at_center,_#ffffff_0%,_#3b82f6_40%,_#1e3a8a_100%)] flex flex-col items-center justify-center;
+
+}
+
+
+
+
+.btn-primary {
+  @apply bg-white text-gray-900 
+         py-3 px-4 rounded-xl shadow-sm 
+         border border-gray-300 focus:outline-none 
+         focus:ring-2 focus:ring-blue-500
+         
+         h-[50px] w-[425px]
+         md:h-[50px] md:w-[575px]
+         focus:border-blue-500 transition duration-200;
+    
+
+
+}
+
+.btn-send {
+
+@apply bg-white text-black font-semibold
+       py-3 px-4 rounded-xl shadow-sm
+       border border-gray-300 focus:outline-none 
+       focus:ring-2 cursor-pointer
+       h-[50px] w-[275px] focus:bg-gray-200;
+ 
+}
+
+
+
+
+.navbar-screen {
+@apply h-[70px] bg-[#ffffff] shadow-sm w-full
+       flex items-end justify-center px-6 cursor-pointer
+
+;
+
+
+}
+
+
+
+.main-screen-primary {
+
+@apply h-screen w-full bg-[#ffffff] flex flex-col  justify-start
+       py-8 px-4 gap-6 md:gap-2; 
+
+}
+
+
+.main-screen-create-quiz {
+@apply min-h-screen bg-gradient-to-b from-blue-500 via-blue-400 to-blue-500 text-white p-6;
+
+}
+
+.button-category-search {
+
+@apply p-4 border-none bg-white shadow-sm 
+
+}
