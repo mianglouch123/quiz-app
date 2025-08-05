@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom"; // 👈 añade esto arriba
 import { Dialog, DialogTitle, Transition, TransitionChild } from '@headlessui/react';
 import CardUser from '../global-components/CardUsers.jsx';
 import CardUserScore from '../global-components/CardUserScore.jsx';
-import UseGetTotalQuizzesDoneByUserId from '../../hooks/quiz/UseGetTotalQuizzesDoneByUserId.jsx';
+import UseGetTotalUsersByQuizId from '../../hooks/quiz/useGetTotalUsersByQuizId.jsx';
 import { HEIGHTS, COLORS_POSITION, POSITIONS } from '../mocks/variablesCardUser.js';
 
 export default function ModalQuizInfo({ data, isOpen, setIsOpen , id }) {
   const [page, setPage] = useState(1);
   const [users, setUsers] = useState([]);
-  const [hasMore, setHasMore] = useState(true);
+  	const [hasMore, setHasMore] = useState(true);
   const [shouldFetch, setShouldFetch] = useState(false);
 
   const location = useLocation();
